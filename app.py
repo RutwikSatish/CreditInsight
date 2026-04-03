@@ -188,7 +188,7 @@ def engineer_features(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
-@st.cache_data
+@st.cache_resource
 def build_sqlite(df: pd.DataFrame):
     conn = sqlite3.connect(":memory:", check_same_thread=False)
     df.to_sql("customers", conn, index=False, if_exists="replace")
