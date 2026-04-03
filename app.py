@@ -617,7 +617,7 @@ with t4:
         fig9.update_layout(**PLOT_LAYOUT, height=220,
             xaxis=dict(showgrid=False, showline=False, tickfont=dict(color=SUB)),
             yaxis=dict(showgrid=False, showline=False, showticklabels=False))
-        st.plotly_chart(fig9, use_container_width=True, config={"displayModeBar":False})
+        st.plotly_chart(fig9, use_container_width=True, config={"displayModeBar":False}, key="executive_age_chart")
 
     # Key findings
     with st.container():
